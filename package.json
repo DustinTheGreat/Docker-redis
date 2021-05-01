@@ -1,0 +1,22 @@
+{
+  "name": "docker-redis",
+  "version": "1.0.0",
+  "description": "Practice using Docker with Redis and Nginx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinTheGreat/Docker-redis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinTheGreat/Docker-redis/issues"
+  },
+  "homepage": "https://github.com/DustinTheGreat/Docker-redis#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
