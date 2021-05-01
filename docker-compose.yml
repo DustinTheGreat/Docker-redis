@@ -11,3 +11,13 @@ services:
     #   - PORT=3003
     env_file:
       - ./.env
+  mongo:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=toor
+    volumes: /data/db
+
+
+volumes:
+  mongo-db:
