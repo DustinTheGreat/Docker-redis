@@ -1,8 +1,9 @@
 # Docker-redis
 Practice using Docker with Redis and Nginx
 
-#Run
-Install Docker and run 
+# Run
+Install Docker and run
+
 `
 
 	sudo docker build -t docker-redis .
