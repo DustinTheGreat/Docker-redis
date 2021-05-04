@@ -4,19 +4,22 @@ services:
     build: .
     ports: 
       - "3003:3003"
-    volumes:
-      - ./:/index.js
+    # volumes:
+    #   - ./:/index.js
       # - /app/node_modules
     # enviroment:
     #   - PORT=3003
     env_file:
       - ./.env
+    depends_on: 
+        - mongo
   mongo:
     image: mongo
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=toor
-    volumes: /data/db
+    volumes:
+      - mongo-db: /data/db
 
 
 volumes:
